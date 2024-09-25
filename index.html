@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <title>Investigando o assassinato do restaurante</title>
+</head>
+<body>
+    <main>
+        <div class="passos ativo" id="passo-0">
+            <img src="cenario-passo0.jpg" alt="">
+            <p>Você é um investigador famoso em boa parte da região Sul da Itália por seu ótimo desempenho em suas investigações.
+            Durante uma noite qualquer, um assassinato ocorreu no restaurante local. Intrigado com o acontecido, você decidiu ir até a cena do crime para investigar mais a fundo sobre quem seria o responsável por aquilo...
+            </p>
+            <button class="btn-escolha" data-escolha="1">Conversar com os funcionários</button>
+            <button class="btn-escolha" data-escolha="2">Analisar a cena do crime</button>
+        </div>
+        <div class="passos" id="passo-1"> 
+            <p> Ao analisar o corpo do cadáver, você encontra um papel levemente amassado contendo um endereço que aparentemente não era muito longe dali.</p>
+            <button class="btn-escolha" data-escolha="3">Ir até o endereço</button>
+            <button class="btn-escolha" data-escolha="4">Investigar mais a cena</button>
+        </div>
+        <div class="passos" id="passo-2"> 
+            <p> Ao chegar no endereço você percebe que se tratava de um bar que estava em péssimas condições. Ao observar mais pelo lado de fora, você percebe que há uma pessoa dentro do bar te encarando, mas quando percebe que você a olhou, o ser desvia o olhar.</p>
+            <button class="btn-escolha" data-escolha="5">Entrar e conversar</button>
+            <button class="btn-escolha" data-escolha="6">Ignorar e voltar para a cena do crime</button> 
+        </div>
+        <div class="passos" id="passo-3"> 
+            <p> Dentro do bar, você encontra um homem nervoso, que tenta esconder algo. Após uma breve conversa, você descobre que ele conhecia a vítima e estava no restaurante na noite do crime.</p>
+            <button class="btn-escolha" data-escolha="7">Pressionar o homem para confessar</button>
+            <button class="btn-escolha" data-escolha="8">Sair do bar e continuar a investigação</button>
+        </div>
+        <div class="passos" id="passo-4"> 
+            <p> De volta à cena do crime, você encontra uma testemunha que não havia falado antes. Ela revela que viu alguém saindo apressadamente do restaurante, deixando cair algo no chão.</p>
+            <button class="btn-escolha" data-escolha="9">Procurar o objeto</button>
+            <button class="btn-escolha" data-escolha="10">Seguir a pista do suspeito</button>
+        </div>
+        <div class="passos" id="passo-5"> 
+            <p> Ao pressionar o homem, ele finalmente cede e revela que foi contratado por alguém para vigiar a vítima. Ele lhe dá um nome: Carlo, um conhecido na região por suas atividades suspeitas.</p>
+            <button class="btn-escolha" data-escolha="11">Ir atrás de Carlo</button>
+            <button class="btn-escolha" data-escolha="12">Voltar ao restaurante para mais pistas</button>
+        </div>
+        <div class="passos" id="passo-6"> 
+            <p> Você encontra o objeto, um anel com uma inscrição. Ao investigar mais a fundo, descobre que o anel pertence a Carlo, o suspeito mencionado antes.</p>
+            <button class="btn-escolha" data-escolha="13">Ir atrás de Carlo</button>
+            <button class="btn-escolha" data-escolha="14">Confrontar o homem no bar com essa evidência</button>
+        </div>
+        <div class="passos" id="passo-7"> 
+            <p> Ao confrontar Carlo, ele tenta fugir, mas você o detém. Após um intenso interrogatório, ele finalmente confessa que estava envolvido no assassinato, mas revela que apenas seguiu ordens de alguém mais poderoso.</p>
+            <button class="btn-escolha" data-escolha="15">Investigar quem deu as ordens</button>
+            <button class="btn-escolha" data-escolha="16">Prender Carlo e encerrar o caso</button>
+        </div>
+        <div class="passos" id="passo-8"> 
+            <p> Cansado desse caso e de sua certa dificuldade, você apenas decide prender Carlo e o acusar como único culpado do assassinato. Carlo é preso pela polícia e você dá "fim" ao caso. </p>
+            <button class="btn-escolha" data-escolha="17">Voltar a investigar</button>
+            <button class="btn-escolha" data-escolha="18">Desistir do caso de fato</button>
+        </div>
+        <div class="passos" id="passo-9"> 
+            <img src="cenario-passo9.png" alt="imagem Desistir">
+            <p> Você realmente encerrou o caso e agora está em sua casa, apenas lendo a matéria de jornal que informava sobre a prisão de Carlo.</p>
+            <button class="btn-escolha" data-escolha="19">Reiniciar</button>
+        </div>
+        <div class="passos" id="passo-10"> 
+            <img src="cenario-passo10.jpg" alt="Caso Encerrado">
+            <p> Após mais investigações, você descobre que o mandante do crime era um empresário local, que queria eliminar a vítima por questões de negócios. Demora bastnate tempo já que o culpado se tratava de alguém muito influente nas mídias, porém, com provas e acusações suficientes, você foi capaz prendê-lo.</p>
+            <p>Parabéns, você solucionou o caso e prendeu o verdadeiro culpado!</p>
+            <button class="btn-escolha" data-escolha="20">Finalizar</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
